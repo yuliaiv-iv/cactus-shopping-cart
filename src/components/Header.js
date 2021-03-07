@@ -24,8 +24,9 @@ export default function Header() {
     <header>
       <div className="container">
         <div className="cart-button">
+          <h2 className="name">Cactus Wolrd</h2>
           <button onClick={handleCartOpen}>
-            <img src={cartLogo} alt="cart" width="30" />({cart.length})
+            <img src={cartLogo} alt="cart" width="30" />{cart.length}
           </button>
           <div ref={modalRef} className={`cart-modal ${isOpen ? "cart-modal-open" : ''}`}>
               <Cart />
