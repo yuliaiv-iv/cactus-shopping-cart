@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.9223261f.chunk.css",
-    "main.js": "/static/js/main.dd5b527c.chunk.js",
-    "main.js.map": "/static/js/main.dd5b527c.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.919a4268.js",
-    "runtime-main.js.map": "/static/js/runtime-main.919a4268.js.map",
-    "static/js/2.f663d56e.chunk.js": "/static/js/2.f663d56e.chunk.js",
-    "static/js/2.f663d56e.chunk.js.map": "/static/js/2.f663d56e.chunk.js.map",
-    "static/js/3.1b8ac313.chunk.js": "/static/js/3.1b8ac313.chunk.js",
-    "static/js/3.1b8ac313.chunk.js.map": "/static/js/3.1b8ac313.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.9223261f.chunk.css.map": "/static/css/main.9223261f.chunk.css.map",
-    "static/js/2.f663d56e.chunk.js.LICENSE.txt": "/static/js/2.f663d56e.chunk.js.LICENSE.txt",
-    "static/media/cart.f57c9d73.svg": "/static/media/cart.f57c9d73.svg"
+    "main.css": "/cactus-shopping-cart/static/css/main.9223261f.chunk.css",
+    "main.js": "/cactus-shopping-cart/static/js/main.dd5b527c.chunk.js",
+    "main.js.map": "/cactus-shopping-cart/static/js/main.dd5b527c.chunk.js.map",
+    "runtime-main.js": "/cactus-shopping-cart/static/js/runtime-main.f0a8afc6.js",
+    "runtime-main.js.map": "/cactus-shopping-cart/static/js/runtime-main.f0a8afc6.js.map",
+    "static/js/2.f663d56e.chunk.js": "/cactus-shopping-cart/static/js/2.f663d56e.chunk.js",
+    "static/js/2.f663d56e.chunk.js.map": "/cactus-shopping-cart/static/js/2.f663d56e.chunk.js.map",
+    "static/js/3.1b8ac313.chunk.js": "/cactus-shopping-cart/static/js/3.1b8ac313.chunk.js",
+    "static/js/3.1b8ac313.chunk.js.map": "/cactus-shopping-cart/static/js/3.1b8ac313.chunk.js.map",
+    "index.html": "/cactus-shopping-cart/index.html",
+    "static/css/main.9223261f.chunk.css.map": "/cactus-shopping-cart/static/css/main.9223261f.chunk.css.map",
+    "static/js/2.f663d56e.chunk.js.LICENSE.txt": "/cactus-shopping-cart/static/js/2.f663d56e.chunk.js.LICENSE.txt",
+    "static/media/cart.f57c9d73.svg": "/cactus-shopping-cart/static/media/cart.f57c9d73.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.919a4268.js",
+    "static/js/runtime-main.f0a8afc6.js",
     "static/js/2.f663d56e.chunk.js",
     "static/css/main.9223261f.chunk.css",
     "static/js/main.dd5b527c.chunk.js"
