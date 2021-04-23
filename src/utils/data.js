@@ -1,10 +1,4 @@
-export const products = [
-  {
-    sku: 11,
-    name: 'Saguaro',
-    image_url: 'https://images.unsplash.com/photo-1547955922-da7439f9c938?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80',
-    price: 62,
-  },
+export const data = [
   {
     sku: 123,
     name: 'Prickly Pear',
@@ -46,5 +40,11 @@ export const products = [
     name: 'Free Hugs',
     image_url: 'https://images.unsplash.com/photo-1528476513691-07e6f563d97f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=658&q=80',
     price: 50,
+  },
+  {
+    sku: 11,
+    name: 'Saguaro',
+    image_url: 'https://images.unsplash.com/photo-1547955922-da7439f9c938?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80',
+    price: 62,
   },
 ];

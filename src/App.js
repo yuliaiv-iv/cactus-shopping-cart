@@ -1,22 +1,34 @@
+import { Fragment, useState } from 'react';
 import './App.css';
-import Header from './components/Header';
-import Product from './components/Product';
-import { products } from './utils/data';
-import { CartProvider } from "./contexts/useCart";
+import Main from './components/Main/Main';
+import Header from './components/Header/Header';
+import Cart from './components/Cart/Cart';
+import CartProvider from './context/CartContext';
+
+console.log(CartProvider)
 
 function App() {
+
+  const [cartShown, setCartShown] = useState(false);
+
+  const showCartHandler = () => {
+    setCartShown(true);
+  }
+
+  const hideCartHandler = () => {
+    setCartShown(false);
+  }
+
   return (
     <CartProvider>
-      <div className="app">
-        <Header />
-        <main>
-          <div className="products-list">
-            {products.map((product, index) => (
-              <Product key={index} product={product} />
-            ))}
-          </div>
-        </main>
-      </div>
+      {cartShown &&
+        <Cart
+          hideCartHandler={hideCartHandler}
+        />}
+      <Header
+        showCartHandler={showCartHandler}
+      />
+      <Main />
     </CartProvider>
   );
 }
