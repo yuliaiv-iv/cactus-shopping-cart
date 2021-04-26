@@ -1,10 +1,20 @@
+import { useContext } from 'react';
 import './CactusCard.css';
 import Form from '../Form/Form';
+import { CartContext } from '../../context/CartContext';
 
 const CactusCard = (props) => {
   const price = `$${props.price.toFixed(2)}`;
+  const cartCtx = useContext(CartContext);
 
-
+  const addToCartHandler = total => {
+    cartCtx.addItem({
+      id: props.id,
+      name: props.name,
+      total: total,
+      price: props.price
+    });
+  }
   return (
     <li className='card'>
       <div className='card__wrapper'>
@@ -16,7 +26,7 @@ const CactusCard = (props) => {
         </div>
       </div>
       <div>
-        <Form />
+        <Form addToCartHandler={addToCartHandler} />
       </div>
     </li>
   );

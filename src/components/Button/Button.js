@@ -8,8 +8,12 @@ const Button = ({ showCartHandler }) => {
   const cartCtx = useContext(CartContext);
 
   const numOfCartItems = cartCtx.items.reduce((curr, item) => {
-    return curr + item.amount
+    // console.log(curr)
+    console.log(curr + item)
+    return curr + item.total
   }, 0);
+
+  console.log(cartCtx.items)
 
   return (
     <button

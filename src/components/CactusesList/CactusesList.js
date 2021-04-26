@@ -6,7 +6,8 @@ import './CactusesList.css';
 const CactusesList = () => {
   const cactusList = data.map((c) => (
     <CactusCard
-      key={c.sku}
+      key={c.id}
+      id={c.id}
       name={c.name}
       image_url={c.image_url}
       description={c.description}

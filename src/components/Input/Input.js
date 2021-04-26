@@ -1,6 +1,8 @@
+import React from 'react';
 import './Input.css';
 
-const Input = (props) => {
+const Input = React.forwardRef((props, ref) => {
+
   return (
     <div className='form__input'>
       <label
@@ -11,10 +13,11 @@ const Input = (props) => {
       </label>
       <input
         className='form__item'
+        ref={ref}
         {...props.input}
       />
     </div>
   );
-};
+});
 
 export default Input;

@@ -5,8 +5,6 @@ import Header from './components/Header/Header';
 import Cart from './components/Cart/Cart';
 import CartProvider from './context/CartContext';
 
-console.log(CartProvider)
-
 function App() {
 
   const [cartShown, setCartShown] = useState(false);

@@ -1,13 +1,35 @@
+import { useRef, useState } from 'react';
 import Input from '../Input/Input';
 import './Form.css';
 
-const Form = (props) => {
+const Form = ({addToCartHandler}) => {
+
+  const inputRef = useRef();
+  const [isValid, setIsValid] = useState(true);
+
+  const submitHandler = event => {
+    event.preventDefault();
+    const enteredAmount = inputRef.current.value;
+    const enteredToNumber = +enteredAmount;
+
+    if (
+      enteredAmount.trim().length === 0 ||
+      enteredToNumber < 1 ||
+      enteredToNumber > 5
+    ) {
+      setIsValid(false);
+      return;
+    }
+    addToCartHandler(enteredAmount);
+  };
+
   return (
-    <form className='form'>
+    <form className='form' onSubmit={submitHandler}>
       <Input
-        label='Amount'
+        ref={inputRef}
+        label='total'
         input={{
-          id: 'amount',
+          id: 'total',
           type: 'number',
           min: '1',
           max: '5',
@@ -16,6 +38,7 @@ const Form = (props) => {
         }}
       />
       <button className='form__button'>+ Add</button>
+      {!isValid && <p>Please enter a valid amount 1-5</p>}
     </form>
   );
 };
