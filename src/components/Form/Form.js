@@ -2,7 +2,7 @@ import { useRef, useState } from 'react';
 import Input from '../Input/Input';
 import './Form.css';
 
-const Form = ({addToCartHandler}) => {
+const Form = (props) => {
 
   const inputRef = useRef();
   const [isValid, setIsValid] = useState(true);
@@ -20,16 +20,16 @@ const Form = ({addToCartHandler}) => {
       setIsValid(false);
       return;
     }
-    addToCartHandler(enteredAmount);
+    props.onAddToCart(enteredToNumber);
   };
 
   return (
     <form className='form' onSubmit={submitHandler}>
       <Input
         ref={inputRef}
-        label='total'
+        label='Amount'
         input={{
-          id: 'total',
+          id: 'amount',
           type: 'number',
           min: '1',
           max: '5',

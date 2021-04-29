@@ -8,12 +8,16 @@ const Cart = ({ hideCartHandler }) => {
 
   const cartCtx = useContext(CartContext);
 
-  const totalAmount = `$${cartCtx.total.toFixed(2)}`;
+  const totalAmount = `$${cartCtx.totalAmount.toFixed(2)}`;
   const hasItems = cartCtx.items.length > 0;
 
-  const cartItemRemoveHandler = id => {};
+  const cartItemRemoveHandler = id => {
+    cartCtx.removeItem(id);
+  };
 
-  const cartItemAddHandler = item => {};
+  const cartItemAddHandler = item => {
+    cartCtx.addItem({...item, amount: 1})
+  };
 
   const cartItems = (
     <ul className='cart-items'>
@@ -21,10 +25,10 @@ const Cart = ({ hideCartHandler }) => {
         <CartItem
           key={item.id}
           name={item.name}
-          total={item.total}
+          amount={item.amount}
           price={item.price}
-          cartItemRemoveHandler={cartItemRemoveHandler}
-          cartItemAddHandler={cartItemAddHandler}
+          cartItemRemoveHandler={cartItemRemoveHandler.bind(null, item.id)}
+          cartItemAddHandler={cartItemAddHandler.bind(null, item)}
         />
       ))}
     </ul>

@@ -7,11 +7,11 @@ const CactusCard = (props) => {
   const price = `$${props.price.toFixed(2)}`;
   const cartCtx = useContext(CartContext);
 
-  const addToCartHandler = total => {
+  const addToCartHandler = amount => {
     cartCtx.addItem({
       id: props.id,
       name: props.name,
-      total: total,
+      amount: amount,
       price: props.price
     });
   }
@@ -26,7 +26,7 @@ const CactusCard = (props) => {
         </div>
       </div>
       <div>
-        <Form addToCartHandler={addToCartHandler} />
+        <Form onAddToCart={addToCartHandler} />
       </div>
     </li>
   );
