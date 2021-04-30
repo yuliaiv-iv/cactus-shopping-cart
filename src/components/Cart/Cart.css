@@ -22,9 +22,9 @@
 .cart__button {
   font: inherit;
   cursor: pointer;
-  background-color: #8a2b06;
+  background-color: #009e4f;
   color: white;
-  border: 1px solid #8a2b06;
+  border: 1px solid #009e4f;
   padding: 0.5rem 2rem;
   border-radius: 25px;
   margin-left: 1rem;
@@ -32,12 +32,12 @@
 
 .cart__button:hover,
 .cart__button:active {
-  background-color: #5a1a01;
-  border-color: #5a1a01;
+  background-color: #197446;
+  border-color: #197446;
   color: white;
 }
 
 .cart__button_alt {
   background-color: white;
-  color: #8a2b06;
+  color: #009e4f;
 }

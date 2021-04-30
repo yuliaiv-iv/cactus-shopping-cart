@@ -1,11 +1,11 @@
 import { Fragment } from 'react';
-import Discription from '../Discription/Discription';
+// import Discription from '../Discription/Discription';
 import CactusesList from '../CactusesList/CactusesList';
 
 const Main = () => {
   return (
     <Fragment>
-      <Discription />
+      {/* <Discription /> */}
       <CactusesList />
     </Fragment>
   );
