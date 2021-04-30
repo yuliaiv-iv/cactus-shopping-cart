@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/cactus-shopping-cart/static/css/main.9223261f.chunk.css",
-    "main.js": "/cactus-shopping-cart/static/js/main.3d38be84.chunk.js",
-    "main.js.map": "/cactus-shopping-cart/static/js/main.3d38be84.chunk.js.map",
-    "runtime-main.js": "/cactus-shopping-cart/static/js/runtime-main.f0a8afc6.js",
-    "runtime-main.js.map": "/cactus-shopping-cart/static/js/runtime-main.f0a8afc6.js.map",
-    "static/js/2.f663d56e.chunk.js": "/cactus-shopping-cart/static/js/2.f663d56e.chunk.js",
-    "static/js/2.f663d56e.chunk.js.map": "/cactus-shopping-cart/static/js/2.f663d56e.chunk.js.map",
-    "static/js/3.1b8ac313.chunk.js": "/cactus-shopping-cart/static/js/3.1b8ac313.chunk.js",
-    "static/js/3.1b8ac313.chunk.js.map": "/cactus-shopping-cart/static/js/3.1b8ac313.chunk.js.map",
+    "main.css": "/cactus-shopping-cart/static/css/main.e357f794.chunk.css",
+    "main.js": "/cactus-shopping-cart/static/js/main.684a17b8.chunk.js",
+    "main.js.map": "/cactus-shopping-cart/static/js/main.684a17b8.chunk.js.map",
+    "runtime-main.js": "/cactus-shopping-cart/static/js/runtime-main.414a83c6.js",
+    "runtime-main.js.map": "/cactus-shopping-cart/static/js/runtime-main.414a83c6.js.map",
+    "static/js/2.69ec8446.chunk.js": "/cactus-shopping-cart/static/js/2.69ec8446.chunk.js",
+    "static/js/2.69ec8446.chunk.js.map": "/cactus-shopping-cart/static/js/2.69ec8446.chunk.js.map",
+    "static/js/3.85401d95.chunk.js": "/cactus-shopping-cart/static/js/3.85401d95.chunk.js",
+    "static/js/3.85401d95.chunk.js.map": "/cactus-shopping-cart/static/js/3.85401d95.chunk.js.map",
     "index.html": "/cactus-shopping-cart/index.html",
-    "static/css/main.9223261f.chunk.css.map": "/cactus-shopping-cart/static/css/main.9223261f.chunk.css.map",
-    "static/js/2.f663d56e.chunk.js.LICENSE.txt": "/cactus-shopping-cart/static/js/2.f663d56e.chunk.js.LICENSE.txt",
-    "static/media/cart.f57c9d73.svg": "/cactus-shopping-cart/static/media/cart.f57c9d73.svg"
+    "static/css/main.e357f794.chunk.css.map": "/cactus-shopping-cart/static/css/main.e357f794.chunk.css.map",
+    "static/js/2.69ec8446.chunk.js.LICENSE.txt": "/cactus-shopping-cart/static/js/2.69ec8446.chunk.js.LICENSE.txt",
+    "static/media/main.53ade12e.jpg": "/cactus-shopping-cart/static/media/main.53ade12e.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.f0a8afc6.js",
-    "static/js/2.f663d56e.chunk.js",
-    "static/css/main.9223261f.chunk.css",
-    "static/js/main.3d38be84.chunk.js"
+    "static/js/runtime-main.414a83c6.js",
+    "static/js/2.69ec8446.chunk.js",
+    "static/css/main.e357f794.chunk.css",
+    "static/js/main.684a17b8.chunk.js"
   ]
 }
