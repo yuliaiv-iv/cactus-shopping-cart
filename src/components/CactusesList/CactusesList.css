@@ -12,6 +12,11 @@
   padding: 0;
 }
 
+.cactuses__loading {
+  text-align: center;
+  color: #fff;
+}
+
 @keyframes list-animation {
   from {
     opacity: 0;
