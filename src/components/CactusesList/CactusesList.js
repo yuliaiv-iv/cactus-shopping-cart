@@ -1,4 +1,4 @@
-// import { data } from '../../utils/data';
+import * as data from '../../utils/data';
 import { useEffect, useState } from 'react';
 import CactusWrapper from '../CactusWrapper/CactusWrapper';
 import CactusCard from '../CactusCard/CactusCard';
@@ -8,37 +8,47 @@ const CactusesList = () => {
 
   const [loadedData, setLoadedData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     setIsLoading(true);
-    fetch('https://shopping-cart-be698-default-rtdb.firebaseio.com/cactuses.json')
-    .then((res) => {
-      if (res.ok) {
-          return res.json()
-      }
-      return Promise.reject(`${res.status}`);
-    })
-    .then((data) => {
-      const fetchedData = [];
-      for (const key in data) {
-        fetchedData.push({
-          id: key,
-          name: data[key].name,
-          image_url: data[key].image_url,
-          price: data[key].price,
+    function initialData() {
+      data.getData()
+        .then((data) => {
+          const fetchedData = [];
+          for (const key in data) {
+            fetchedData.push({
+              id: key,
+              name: data[key].name,
+              image_url: data[key].image_url,
+              price: data[key].price,
+            })
+          }
+          setLoadedData(fetchedData);
         })
-      }
-      setLoadedData(fetchedData);
-    })
-    .finally(() => {
-      setIsLoading(false);
-    })
-  }, [])
+        .catch((err) => {
+          console.log('Error:', err);
+          setError(true);
+        })
+        .finally(() => {
+          setIsLoading(false);
+        })
+    }
+    initialData();
+  }, [setLoadedData])
 
   if (isLoading) {
     return (
       <section>
-        <p className='cactuses__loading'>Loading...</p>
+        <p className='cactuses__status'>Loading...</p>
+      </section>
+    )
+  }
+
+  if (error) {
+    return (
+      <section>
+        <p className='cactuses__error'>Something went wrong...</p>
       </section>
     )
   }

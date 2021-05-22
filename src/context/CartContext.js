@@ -5,6 +5,7 @@ export const CartContext = React.createContext({
   totalAmount: 0,
   addItem: (item) => { },
   removeItem: (id) => { },
+  clearCart: () => { },
 });
 
 const initialState = {
@@ -45,7 +46,7 @@ const cartReducer = (state, action) => {
     const existingItem = state.items[existingCartItemIndex];
     const updatedAmount = state.totalAmount - existingItem.price;
     let updatedItems;
-    
+
     if (existingItem.amount === 1) {
       updatedItems = state.items.filter(item => item.id !== action.id);
     } else {
@@ -58,6 +59,10 @@ const cartReducer = (state, action) => {
       items: updatedItems,
       totalAmount: updatedAmount
     };
+  }
+
+  if (action.type === 'CLEAR') {
+    return initialState;
   }
 
   return initialState
@@ -75,11 +80,16 @@ const CartProvider = ({ children }) => {
     dispatchCart({ type: 'ADD', item: item })
   };
 
+  const clearCartHandler = () => {
+    dispatchCart({ type: 'CLEAR', })
+  }
+
   return <CartContext.Provider value={{
     items: cartState.items,
     totalAmount: cartState.totalAmount,
     addItem: addItemHandler,
     removeItem: removeItemHandler,
+    clearCart: clearCartHandler,
   }}>
     {children}
   </CartContext.Provider>

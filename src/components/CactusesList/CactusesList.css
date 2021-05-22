@@ -1,5 +1,4 @@
-  
-.cactuses {
+  .cactuses {
   max-width: 60rem;
   width: 90%;
   margin: 2rem auto;
@@ -12,9 +11,14 @@
   padding: 0;
 }
 
-.cactuses__loading {
+.cactuses__status {
   text-align: center;
   color: #fff;
+}
+
+.cactuses__error {
+  text-align: center;
+  color: red;
 }
 
 @keyframes list-animation {

@@ -11,8 +11,6 @@ const Button = ({ showCartHandler }) => {
     return curr + item.amount
   }, 0);
 
-  console.log(cartCtx)
-
   return (
     <button
       className='button'

@@ -27,7 +27,6 @@
   border: 1px solid #009e4f;
   padding: 0.5rem 2rem;
   border-radius: 25px;
-  margin-left: 1rem;
 }
 
 .cart__button:hover,
@@ -40,4 +39,10 @@
 .cart__button_alt {
   background-color: white;
   color: #009e4f;
+}
+
+.cart__submitted {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
